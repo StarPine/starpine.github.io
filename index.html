@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,15 +14,13 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="shortcut icon" href="/images/logo.jpg">
-    
-<link rel="stylesheet" href="/css/font-awesome.min.css">
-
+    <link rel="shortcut icon" href="/images/avatar.jpg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/logo.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/luoxh.jpeg","description":"Welcome to StarPine's Blog","color":"#0066CC"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/avatar.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":false,"background_img":"/images/luoxh.jpeg","description":"Welcome to StarPine's Blog"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 6.0.0"></head>
 
@@ -30,22 +28,19 @@
 <body>
 <div class="progress-bar-container">
     
+        <span class="scroll-progress-bar"></span>
+    
 
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
     
 </div>
 
 
 <main class="page-container">
-
-    
-        <div class="first-screen-container flex-center fade-in-down-animation">
-    <div class="content flex-center">
-        <div class="description">
-            Welcome to StarPine&#39;s Blog
-        </div>
-        
-    </div>
-</div>
 
     
 
@@ -54,8 +49,12 @@
         <div class="page-main-content-top">
             <header class="header-wrapper">
 
-    <div class="header-content has-first-screen">
+    <div class="header-content">
         <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/avatar.jpg">
+                </a>
             
             <a class="logo-title" href="/">
                 Star Pine
@@ -70,7 +69,7 @@
                             <a class="active"
                                href="/"
                             >
-                                HOME
+                                首页
                             </a>
                         </li>
                     
@@ -78,14 +77,52 @@
                             <a class=""
                                href="/archives"
                             >
-                                ARCHIVES
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
                             </a>
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -99,12 +136,32 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class="active"
-                       href="/">HOME</a>
+                       href="/">首页</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">ARCHIVES</a>
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
                 </li>
             
         </ul>
@@ -130,6 +187,233 @@
                 
 
                 <h3 class="home-article-title">
+                    <a href="/2022/02/15/Keep4/Keep4/">
+                        Keep4
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:45:29 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/Keep4/Keep4/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/15/Keep3/">
+                        Keep3
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:45:26 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/Keep3/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/15/Keep2/">
+                        Keep2
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:45:22 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/Keep2/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/15/Keep/">
+                        Keep
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:45:03 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/Keep/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/15/adddd/">
+                        adddd
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:44:54 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/adddd/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/15/a/">
+                        a
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Feb 15 2022 18:44:48 GMT+0800">2022-02-15</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/15/a/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/14/Test/">
+                        Test
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+
+
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Feb 14 2022 11:43:37 GMT+0800">2022-02-14</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/14/Test/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
+                        hexo史上最全搭建教程
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。
+而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Feb 14 2022 11:43:37 GMT+0800">2022-02-14</span></span>
+        
+        
+    </div>
+
+    <a href="/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
                     <a href="/2022/02/12/ComeOn/">
                         ComeOn
                     </a>
@@ -137,7 +421,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        
+                        现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。
+而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是...
                     
                 </div>
 
@@ -148,35 +433,7 @@
         
     </div>
 
-    <a href="/2022/02/12/ComeOn/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2022/02/12/test/">
-                        test
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Feb 12 2022 17:13:09 GMT+0800">2022-02-12</span></span>
-        
-        
-    </div>
-
-    <a href="/2022/02/12/test/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/2022/02/12/ComeOn/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -204,35 +461,7 @@
         
     </div>
 
-    <a href="/2022/02/12/hello-world/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2022/02/11/a/">
-                        a
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Feb 11 2022 18:16:35 GMT+0800">2022-02-11</span></span>
-        
-        
-    </div>
-
-    <a href="/2022/02/11/a/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    <a href="/2022/02/12/hello-world/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -267,8 +496,22 @@
             2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Star Pine</a>
         </div>
         
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
         <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
         </div>
         
         
@@ -303,10 +546,6 @@
         
 
         
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="fas fa-arrow-up"></i>
-            </li>
-        
 
         <li class="tools-item tool-scroll-to-bottom flex-center">
             <i class="fas fa-arrow-down"></i>
@@ -317,6 +556,11 @@
         <li class="tools-item tool-toggle-show flex-center">
             <i class="fas fa-cog fa-spin"></i>
         </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
         
     </ul>
 </div>
@@ -331,33 +575,90 @@
 
 
     
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
 </main>
 
 
 
 
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
 
-<script src="/js/utils.js"></script>
 
-<script src="/js/main.js"></script>
-
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/dark-light-toggle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
 
 
 
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
 
 
 
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script>
 
 
-<div class="post-scripts">
+<div class="post-scripts pjax">
     
 </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
 
 
 
