@@ -54,14 +54,14 @@ style:
 social_contact:
   enable: true
   links:
-    github: # your GitHub URL
-    weixin: # your WeChat QR-Code URL
-    qq: # your QQ QR-Code URL
-    weibo: # your WeiBo URL
-    zhihu: # your ZhiHu URL
-    twitter: # your twitter URL
-    facebook: # your facebook URL
-    email: # your email
+    github: https://github.com/StarPine # your GitHub URL
+    weixin: https://github.com/StarPine # your WeChat QR-Code URL
+    qq: https://github.com/StarPine # your QQ QR-Code URL
+    weibo: https://github.com/StarPine # your WeiBo URL
+    zhihu: https://github.com/StarPine # your ZhiHu URL
+    twitter: https://github.com/StarPine # your twitter URL
+    facebook: https://github.com/StarPine # your facebook URL
+    email: https://github.com/StarPine # your email
 
 # ---------------------------------------------------------------------------------------
 # Navigation menu

@@ -1,3 +1,5 @@
+$first-screen-icon-size = 1.0rem;
+
 .footer {
   font-size: 1rem;
   color: var(--third-text-color);
@@ -14,8 +16,31 @@
   }
 
   .info-container {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     text-align: center;
+	
+	.s-icon-list {
+      //position: absolute;
+      bottom: 0;
+      font-size: $first-screen-icon-size;
+      text-align: center;
+
+      +keep-tablet() {
+        font-size: $first-screen-icon-size * 0.9;
+      }
+
+      .s-icon-item {
+        margin-right: 20px;
+        cursor: pointer;
+        line-height: 2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
   }
 
   .info-item {
