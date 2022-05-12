@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>ComeOn</title>
+    <url>/2022/02/12/ComeOn/</url>
+    <content><![CDATA[<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
+<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<p>教程分三个部分，<br>Hexo简介<br>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<p>教程分三个部分，</p>
+<p>第一部分：hexo的初级搭建还有部署到github page上，以及个人域名的绑定。<br>第二部分：hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流<br>第三部分：hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。<br>————————————————<br>版权声明：本文为CSDN博主「zjufangzh」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a class="link"   href="https://blog.csdn.net/sinat_37781304/article/details/82729029" >https://blog.csdn.net/sinat_37781304/article/details/82729029<i class="fas fa-external-link-alt"></i></a></p>
+<p>第一部分<br>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</p>
+<p>Hexo简介<br>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<p>Hexo搭建步骤<br>————————————————<br>版权声明：本文为CSDN博主「zjufangzh」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a class="link"   href="https://blog.csdn.net/sinat_37781304/article/details/82729029" >https://blog.csdn.net/sinat_37781304/article/details/82729029<i class="fas fa-external-link-alt"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Android相关</title>
+    <url>/2022/05/12/Android%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>GooglePlay内购测试</title>
+    <url>/2022/05/12/GooglePlay%E5%86%85%E8%B4%AD%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>最近项目做海外版本，接入Google wallet支付后，测试验证比较繁琐，故记录一下。<br>Google wallet支付方式接入完成后，需要按照如下步骤设置，才可以进行支付测试：</p>
+<h2 id="一、配置并发布应用内商品"><a href="#一、配置并发布应用内商品" class="headerlink" title="一、配置并发布应用内商品"></a>一、配置并发布应用内商品</h2><p>进入Google Play Console - 所有应用 ，选择具体应用，进行商品设置：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235859635-842123950.png"
+                      alt="img"
+                ></p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>配置完应用内商品一定要发布，使之生效；</li>
+<li>一定要保证网络环境所对应的国家在发布范围内；</li>
+<li>游戏服务不支持商品配置，应用才支持商品信息设置；</li>
+</ul>
+<h2 id="二、上传APK并发布应用"><a href="#二、上传APK并发布应用" class="headerlink" title="二、上传APK并发布应用"></a>二、上传APK并发布应用</h2><p>Google Play Developer Console一个应用的发布渠道包括：正式渠道、Beta渠道、Alpha渠道，测试用的APK只要上传到Beta版或者Alpha版频道。</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>应用必须发布后，才可以测试支付功能。</li>
+<li>应用发布后不会立即生效。</li>
+<li>上传的APK包必须要有签名，而且不能用debug签名。</li>
+<li>上传的APK包体积不能超过50M，否则需要做分包。</li>
+<li>apk包发布到Beta或者Alpha渠道即可，不需要发布到正式渠道。</li>
+<li>如果应该状态变为【已发布】说明发布成功。</li>
+<li>Beta、Alpha也会进行严格审核，一些隐私问题或者政策问题会导致应用无法通过审核甚至下架。</li>
+<li>安装到设备上用于测试的apk包可以和上传到Google Play的不同，但要保证这两个APK包使用相同的包名、签名、versionCode。</li>
+<li>测试时使用的网络环境所属的国家和地区一定要在应用发布的国家或者地区范围内。</li>
+</ul>
+<h2 id="三、设置测试账号"><a href="#三、设置测试账号" class="headerlink" title="三、设置测试账号"></a>三、设置测试账号</h2><p>（1）进入应用版本-具体发布渠道（如Alpha版）-管理测试人员，可以修改、添加测试人员账号；<br>（2）将【加入测试的网址】分享给测试人员访问，二次确认后才可以真正加入测试；<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235923930-2066709133.png"
+                      alt="img"
+                ></p>
+<h2 id="四、Android设备上安装应用"><a href="#四、Android设备上安装应用" class="headerlink" title="四、Android设备上安装应用"></a>四、Android设备上安装应用</h2><p>方法一：设备上GooglePlay直接搜索应用并安装；<br>方法二：通过PC的GooglePlay安装到指定手机；<br>方法三：若不使用GooglePlay应用，则传统apk安装即可，注意：与GooglePlay上的包保持相同的包名、签名、versionCode。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">安装到真机上的测试APP签名、包名和上传到Google Play的APK一致，就可以测试。  </span><br></pre></td></tr></table></figure>
+
+<h2 id="五、Google-Wallet支付"><a href="#五、Google-Wallet支付" class="headerlink" title="五、Google Wallet支付"></a>五、Google Wallet支付</h2><p>安装完成后，支付环节选择开发者后台配置的商品、Google Wallet支付方式即可，注意GooglePlay账号需要绑定支持国际支付的借记卡&#x2F;信用卡，才可以支付成功。</p>
+<h2 id="六、沙盒测试"><a href="#六、沙盒测试" class="headerlink" title="六、沙盒测试"></a>六、沙盒测试</h2><p>沙盒测试：测试期间，经过授权的用户帐户可通过 Google Play 购买您的应用内商品，不过这些用户帐户不用实际支付费用。</p>
+<p>设置沙盒账号：在 Developer Console 中，转到 Settings &gt; Account details，然后在 License Testing 部分将相应地址添加到 Gmail accounts with testing access 字段并保存。<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235940803-2012662898.png"
+                      alt="img"
+                ><strong>划重点：</strong><br>1、沙盒测试的账号，也需要按照 一～五 的流程配置完成，才可以进行商品购买。<br>2、沙盒测试账号只是额外增加了许可测试（license test）的设置，支付时候不需要真正付款。</p>
+<p>PS：Google开发者后台中文翻译迷之难理解，英文过关的建议直接查看英文版。</p>
+]]></content>
+      <tags>
+        <tag>google</tag>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/02/12/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server or hexo s</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>android</category>
+        <category>glide</category>
+        <category>源码</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo写作教程</title>
+    <url>/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="Hexo分类"><a href="#Hexo分类" class="headerlink" title="Hexo分类"></a>Hexo分类</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">categories: </span><br><span class="line">- [Java, android, glide, 源码] //这个为四级分类</span><br><span class="line">- [Java, spring] //这个为二级分类</span><br></pre></td></tr></table></figure>
+
+<p>详细展示为（以keep主题为例）<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/image-20220512150624872.png"
+                      alt="image-20220512150624872"
+                ></p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo史上最全搭建教程</title>
+    <url>/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
+<p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
+<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
+<p><strong>写在前面</strong><br> ggplot2是一款风靡全球的绘图R包，可惜的是，我对它的理解只能到入门的水平，本着在实战中学习的理念，我就搜索一下往后可能用得到的图，进行揣摩和优化，然后我发现了一个师兄的公众号，遂跟着这个师兄学习R绘图。公众号在文末。</p>
+<h2 id="1-读入数据"><a href="#1-读入数据" class="headerlink" title="1.读入数据"></a>1.读入数据</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">dat&lt;-read.table(<span class="string">&quot;kegg.txt&quot;</span>,</span><br><span class="line">                sep = <span class="string">&quot;\t&quot;</span>,</span><br><span class="line">                header = T)</span><br><span class="line">colnames(dat)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-过滤数据并用默认参数展示"><a href="#2-过滤数据并用默认参数展示" class="headerlink" title="2.过滤数据并用默认参数展示"></a>2.过滤数据并用默认参数展示</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">library(tidyverse)</span><br><span class="line">dat %&gt;% filter(Corrected.P.Value&lt;0.0001) -&gt; dat01 #这里为了减少计算量，根据P值进行了过滤</span><br><span class="line">dim(dat01)</span><br><span class="line">dim(dat)</span><br><span class="line"></span><br><span class="line">library(ggplot2)</span><br><span class="line">dat01$GeneRatio&lt;-dat01$Input.number/200  #ratio的大小其实反应着出现次数的多少</span><br><span class="line">ggplot(dat01,aes(x=GeneRatio,y=Term))+</span><br><span class="line">  geom_point(aes(size=Input.number,color=Corrected.P.Value))</span><br></pre></td></tr></table></figure>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://upload-images.jianshu.io/upload_images/19527700-df1c0458ff3f06f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"
+                      alt="img"
+                ></p>
+<p>image.png</p>
+<p>这当然无法达到我们发文章的要求，需要对其进行美化一下。</p>
+<h2 id="3-美化"><a href="#3-美化" class="headerlink" title="3. 美化"></a>3. 美化</h2><p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p>安装好后，用<code>git --version</code> 来查看一下版本</p>
+<h1 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h1><p>新建完成后，指定文件夹目录下有：</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li>** _config.yml: 博客的配置文件**</li>
+</ul>
+<p>对上述几个参数进行解读：</p>
+<ul>
+<li>reorder: 根据出现的次数(generatio)对不同的通路从大到小进行排序。</li>
+<li>coord_cartesian() ：调整画布大小，没什么好说的。</li>
+<li>scale_color_paletteer_c() ：调用调色板paletteer，这里面有很多的调色板可以选用，拿grDevices来说，可以选用topo.colors()、rainbow()、heat.colors()、terrain.colors()、cm.colors()；这里给自己挖了坑，能不能用ggsci来配色，目前没解决，等我解决了会来更正的。</li>
+<li>theme_bw() ：调整网络的有无，也没什么好说的。</li>
+<li>scale_size_continuous()  添加图注，并标注大小范围。</li>
+</ul>
+<p>参考链接：<br> 1.绘图 <a class="link"   href="https://links.jianshu.com/go?to=https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg" >https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg<i class="fas fa-external-link-alt"></i></a><br> 2.paletteer documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://www.rdocumentation.org/packages/paletteer/versions/1.4.0" >https://www.rdocumentation.org/packages/paletteer/versions/1.4.0<i class="fas fa-external-link-alt"></i></a><br> 3.grDevices documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html" >https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html<i class="fas fa-external-link-alt"></i></a></p>
+<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+]]></content>
+  </entry>
+</search>

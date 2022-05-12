@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            GooglePlay内购测试 |
         
         Star Pine
     </title>
@@ -185,7 +185,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Hello World</span>
+            <span class="title-hover-animation">GooglePlay内购测试</span>
         </div>
 
         
@@ -204,36 +204,9 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-02-12 15:21:02</span>
-        <span class="mobile">2022-02-12 15:21</span>
+        <span class="pc">2022-05-12 11:00:10</span>
+        <span class="mobile">2022-05-12 11:00</span>
     </span>
-    
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/categories/Java/">Java</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        &gt; <a href="/categories/Java/android/">android</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        &gt; <a href="/categories/Java/android/glide/">glide</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        &gt; <a href="/categories/Java/android/glide/%E6%BA%90%E7%A0%81/">源码</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        &gt; <a href="/categories/Java/spring/">spring</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -241,7 +214,11 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                        <a href="/tags/google/">google</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/android/">android</a>&nbsp;
                     </li>
                 
             </ul>
@@ -264,19 +241,51 @@
         
 
         <div class="article-content markdown-body">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            <p>最近项目做海外版本，接入Google wallet支付后，测试验证比较繁琐，故记录一下。<br>Google wallet支付方式接入完成后，需要按照如下步骤设置，才可以进行支付测试：</p>
+<h2 id="一、配置并发布应用内商品"><a href="#一、配置并发布应用内商品" class="headerlink" title="一、配置并发布应用内商品"></a>一、配置并发布应用内商品</h2><p>进入Google Play Console - 所有应用 ，选择具体应用，进行商品设置：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235859635-842123950.png"
+                      alt="img"
+                ></p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>配置完应用内商品一定要发布，使之生效；</li>
+<li>一定要保证网络环境所对应的国家在发布范围内；</li>
+<li>游戏服务不支持商品配置，应用才支持商品信息设置；</li>
+</ul>
+<h2 id="二、上传APK并发布应用"><a href="#二、上传APK并发布应用" class="headerlink" title="二、上传APK并发布应用"></a>二、上传APK并发布应用</h2><p>Google Play Developer Console一个应用的发布渠道包括：正式渠道、Beta渠道、Alpha渠道，测试用的APK只要上传到Beta版或者Alpha版频道。</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>应用必须发布后，才可以测试支付功能。</li>
+<li>应用发布后不会立即生效。</li>
+<li>上传的APK包必须要有签名，而且不能用debug签名。</li>
+<li>上传的APK包体积不能超过50M，否则需要做分包。</li>
+<li>apk包发布到Beta或者Alpha渠道即可，不需要发布到正式渠道。</li>
+<li>如果应该状态变为【已发布】说明发布成功。</li>
+<li>Beta、Alpha也会进行严格审核，一些隐私问题或者政策问题会导致应用无法通过审核甚至下架。</li>
+<li>安装到设备上用于测试的apk包可以和上传到Google Play的不同，但要保证这两个APK包使用相同的包名、签名、versionCode。</li>
+<li>测试时使用的网络环境所属的国家和地区一定要在应用发布的国家或者地区范围内。</li>
+</ul>
+<h2 id="三、设置测试账号"><a href="#三、设置测试账号" class="headerlink" title="三、设置测试账号"></a>三、设置测试账号</h2><p>（1）进入应用版本-具体发布渠道（如Alpha版）-管理测试人员，可以修改、添加测试人员账号；<br>（2）将【加入测试的网址】分享给测试人员访问，二次确认后才可以真正加入测试；<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235923930-2066709133.png"
+                      alt="img"
+                ></p>
+<h2 id="四、Android设备上安装应用"><a href="#四、Android设备上安装应用" class="headerlink" title="四、Android设备上安装应用"></a>四、Android设备上安装应用</h2><p>方法一：设备上GooglePlay直接搜索应用并安装；<br>方法二：通过PC的GooglePlay安装到指定手机；<br>方法三：若不使用GooglePlay应用，则传统apk安装即可，注意：与GooglePlay上的包保持相同的包名、签名、versionCode。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">安装到真机上的测试APP签名、包名和上传到Google Play的APK一致，就可以测试。  </span><br></pre></td></tr></table></figure>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server or hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="五、Google-Wallet支付"><a href="#五、Google-Wallet支付" class="headerlink" title="五、Google Wallet支付"></a>五、Google Wallet支付</h2><p>安装完成后，支付环节选择开发者后台配置的商品、Google Wallet支付方式即可，注意GooglePlay账号需要绑定支持国际支付的借记卡&#x2F;信用卡，才可以支付成功。</p>
+<h2 id="六、沙盒测试"><a href="#六、沙盒测试" class="headerlink" title="六、沙盒测试"></a>六、沙盒测试</h2><p>沙盒测试：测试期间，经过授权的用户帐户可通过 Google Play 购买您的应用内商品，不过这些用户帐户不用实际支付费用。</p>
+<p>设置沙盒账号：在 Developer Console 中，转到 Settings &gt; Account details，然后在 License Testing 部分将相应地址添加到 Gmail accounts with testing access 字段并保存。<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/1301014-20180622235940803-2012662898.png"
+                      alt="img"
+                ><strong>划重点：</strong><br>1、沙盒测试的账号，也需要按照 一～五 的流程配置完成，才可以进行商品购买。<br>2、沙盒测试账号只是额外增加了许可测试（license test）的设置，支付时候不需要真正付款。</p>
+<p>PS：Google开发者后台中文翻译迷之难理解，英文过关的建议直接查看英文版。</p>
 
         </div>
 
@@ -284,11 +293,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：Hello World</li>
+        <li>本文标题：GooglePlay内购测试</li>
         <li>本文作者：Star Pine</li>
-        <li>创建时间：2022-02-12 15:21:02</li>
+        <li>创建时间：2022-05-12 11:00:10</li>
         <li>
-            本文链接：https://starpine.github.io/2022/02/12/hello-world/
+            本文链接：https://starpine.github.io/2022/05/12/GooglePlay内购测试/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -303,7 +312,11 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>&nbsp;
+                        <a href="/tags/google/">#google</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/android/">#android</a>&nbsp;
                     </li>
                 
             </ul>
@@ -315,18 +328,33 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/02/12/ComeOn/"
+                           href="/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">ComeOn</span>
+                                <span class="post-nav-title-item">hexo写作教程</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
                     </div>
                 
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">hexo史上最全搭建教程</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 
             </div>
         
@@ -552,7 +580,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%85%8D%E7%BD%AE%E5%B9%B6%E5%8F%91%E5%B8%83%E5%BA%94%E7%94%A8%E5%86%85%E5%95%86%E5%93%81"><span class="nav-number">1.</span> <span class="nav-text">一、配置并发布应用内商品</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%8A%E4%BC%A0APK%E5%B9%B6%E5%8F%91%E5%B8%83%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">二、上传APK并发布应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AE%BE%E7%BD%AE%E6%B5%8B%E8%AF%95%E8%B4%A6%E5%8F%B7"><span class="nav-number">3.</span> <span class="nav-text">三、设置测试账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81Android%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">四、Android设备上安装应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81Google-Wallet%E6%94%AF%E4%BB%98"><span class="nav-number">5.</span> <span class="nav-text">五、Google Wallet支付</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E6%B2%99%E7%9B%92%E6%B5%8B%E8%AF%95"><span class="nav-number">6.</span> <span class="nav-text">六、沙盒测试</span></a></li></ol>
     </div>
 </div>
         </aside>
