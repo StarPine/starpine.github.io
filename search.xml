@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>ComeOn</title>
-    <url>/2022/02/12/ComeOn/</url>
-    <content><![CDATA[<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
-<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
-<p>教程分三个部分，<br>Hexo简介<br>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
-<p>教程分三个部分，</p>
-<p>第一部分：hexo的初级搭建还有部署到github page上，以及个人域名的绑定。<br>第二部分：hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流<br>第三部分：hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。<br>————————————————<br>版权声明：本文为CSDN博主「zjufangzh」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a class="link"   href="https://blog.csdn.net/sinat_37781304/article/details/82729029" >https://blog.csdn.net/sinat_37781304/article/details/82729029<i class="fas fa-external-link-alt"></i></a></p>
-<p>第一部分<br>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</p>
-<p>Hexo简介<br>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
-<p>Hexo搭建步骤<br>————————————————<br>版权声明：本文为CSDN博主「zjufangzh」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a class="link"   href="https://blog.csdn.net/sinat_37781304/article/details/82729029" >https://blog.csdn.net/sinat_37781304/article/details/82729029<i class="fas fa-external-link-alt"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Android相关</title>
-    <url>/2022/05/12/Android%E7%9B%B8%E5%85%B3/</url>
+    <title>Hexo配置</title>
+    <url>/2022/05/12/Hexo%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -67,9 +54,43 @@
                 ><strong>划重点：</strong><br>1、沙盒测试的账号，也需要按照 一～五 的流程配置完成，才可以进行商品购买。<br>2、沙盒测试账号只是额外增加了许可测试（license test）的设置，支付时候不需要真正付款。</p>
 <p>PS：Google开发者后台中文翻译迷之难理解，英文过关的建议直接查看英文版。</p>
 ]]></content>
+      <categories>
+        <category>android</category>
+        <category>googlepay</category>
+      </categories>
       <tags>
         <tag>google</tag>
         <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo写作教程</title>
+    <url>/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h4 id="categories（分类）"><a href="#categories（分类）" class="headerlink" title="categories（分类）"></a>categories（分类）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">categories: </span><br><span class="line">- [Java, android, glide, 源码] //这个为四级分类</span><br><span class="line">- [Java, spring] //这个为二级分类</span><br></pre></td></tr></table></figure>
+<p>详细展示为（以keep主题为例）<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/image-20220512150624872.png"
+                      alt="image-20220512150624872"
+                ></p>
+<h4 id="tags（标签）"><a href="#tags（标签）" class="headerlink" title="tags（标签）"></a>tags（标签）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">tags: [hexo, 教程] //这里添加了两个标签</span><br></pre></td></tr></table></figure>
+
+<h4 id="links（友链）"><a href="#links（友链）" class="headerlink" title="links（友链）"></a>links（友链）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="about（关于）"><a href="#about（关于）" class="headerlink" title="about（关于）"></a>about（关于）</h4><h4 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h4><ul>
+<li><p>添加插件    在博客根目录执行命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改根目录下的<code>_config.yml</code></p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改主题配置文件    我的路径：.&#x2F;themes&#x2F;keep下的<code>_config.yml</code>文件</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -101,19 +122,24 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo写作教程</title>
-    <url>/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="Hexo分类"><a href="#Hexo分类" class="headerlink" title="Hexo分类"></a>Hexo分类</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">categories: </span><br><span class="line">- [Java, android, glide, 源码] //这个为四级分类</span><br><span class="line">- [Java, spring] //这个为二级分类</span><br></pre></td></tr></table></figure>
+    <title>Hexo常用命令</title>
+    <url>/2022/05/12/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="清除"><a href="#清除" class="headerlink" title="清除"></a>清除</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
 
-<p>详细展示为（以keep主题为例）<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/image-20220512150624872.png"
-                      alt="image-20220512150624872"
-                ></p>
+<h4 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g 或者 hexo generate</span><br></pre></td></tr></table></figure>
+
+<h4 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo s 或者 hexo server</span><br></pre></td></tr></table></figure>
+
+<h4 id="部署到远端服务"><a href="#部署到远端服务" class="headerlink" title="部署到远端服务"></a>部署到远端服务</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d 或者 hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h4 id="可以组合使用"><a href="#可以组合使用" class="headerlink" title="可以组合使用"></a>可以组合使用</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp; hexo g &amp; hexo s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp; hexo g &amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<h4 id="创建本地md文件（位置为：-x2F-source-x2F-posts-x2F-xxx-md）"><a href="#创建本地md文件（位置为：-x2F-source-x2F-posts-x2F-xxx-md）" class="headerlink" title="创建本地md文件（位置为：..&#x2F;source&#x2F;_posts&#x2F;xxx.md）"></a>创建本地md文件（位置为：..&#x2F;source&#x2F;_posts&#x2F;xxx.md）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new xxx 或者 hexo n xxx</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <tags>
-        <tag>教程</tag>
         <tag>hexo</tag>
       </tags>
   </entry>
@@ -160,6 +186,17 @@
 <p>参考链接：<br> 1.绘图 <a class="link"   href="https://links.jianshu.com/go?to=https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg" >https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg<i class="fas fa-external-link-alt"></i></a><br> 2.paletteer documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://www.rdocumentation.org/packages/paletteer/versions/1.4.0" >https://www.rdocumentation.org/packages/paletteer/versions/1.4.0<i class="fas fa-external-link-alt"></i></a><br> 3.grDevices documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html" >https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html<i class="fas fa-external-link-alt"></i></a></p>
 <p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 <p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Android相关</title>
+    <url>/2022/05/12/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/Android%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<p>对对对<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/image-20220512184709270.png"
+                      alt="image-20220512184709270"
+                ></p>
 ]]></content>
   </entry>
 </search>
