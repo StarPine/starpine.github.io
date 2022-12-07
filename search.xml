@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo配置</title>
-    <url>/2022/05/12/Hexo%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[]]></content>
+    <title>HTML快速入门</title>
+    <url>/2022/05/17/HTML%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p><h>nih</h></p>
+<blockquote>
+<h4 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h4></blockquote>
+<p>&#x3D;&#x3D;对对对kk将根据国家机构进度&#x3D;&#x3D;</p>
+<p>等待</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/02/12/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server or hexo s</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>android</category>
+        <category>glide</category>
+        <category>源码</category>
+        <category>spring</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo史上最全搭建教程</title>
+    <url>/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
+<p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
+<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
+<p><strong>写在前面</strong><br> ggplot2是一款风靡全球的绘图R包，可惜的是，我对它的理解只能到入门的水平，本着在实战中学习的理念，我就搜索一下往后可能用得到的图，进行揣摩和优化，然后我发现了一个师兄的公众号，遂跟着这个师兄学习R绘图。公众号在文末。</p>
+<h2 id="1-读入数据"><a href="#1-读入数据" class="headerlink" title="1.读入数据"></a>1.读入数据</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">dat&lt;-read.table(<span class="string">&quot;kegg.txt&quot;</span>,</span><br><span class="line">                sep = <span class="string">&quot;\t&quot;</span>,</span><br><span class="line">                header = T)</span><br><span class="line">colnames(dat)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-过滤数据并用默认参数展示"><a href="#2-过滤数据并用默认参数展示" class="headerlink" title="2.过滤数据并用默认参数展示"></a>2.过滤数据并用默认参数展示</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">library(tidyverse)</span><br><span class="line">dat %&gt;% filter(Corrected.P.Value&lt;0.0001) -&gt; dat01 #这里为了减少计算量，根据P值进行了过滤</span><br><span class="line">dim(dat01)</span><br><span class="line">dim(dat)</span><br><span class="line"></span><br><span class="line">library(ggplot2)</span><br><span class="line">dat01$GeneRatio&lt;-dat01$Input.number/200  #ratio的大小其实反应着出现次数的多少</span><br><span class="line">ggplot(dat01,aes(x=GeneRatio,y=Term))+</span><br><span class="line">  geom_point(aes(size=Input.number,color=Corrected.P.Value))</span><br></pre></td></tr></table></figure>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://upload-images.jianshu.io/upload_images/19527700-df1c0458ff3f06f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"
+                      alt="img"
+                ></p>
+<p>image.png</p>
+<p>这当然无法达到我们发文章的要求，需要对其进行美化一下。</p>
+<h2 id="3-美化"><a href="#3-美化" class="headerlink" title="3. 美化"></a>3. 美化</h2><p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p>安装好后，用<code>git --version</code> 来查看一下版本</p>
+<h1 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h1><p>新建完成后，指定文件夹目录下有：</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li>** _config.yml: 博客的配置文件**</li>
+</ul>
+<p>对上述几个参数进行解读：</p>
+<ul>
+<li>reorder: 根据出现的次数(generatio)对不同的通路从大到小进行排序。</li>
+<li>coord_cartesian() ：调整画布大小，没什么好说的。</li>
+<li>scale_color_paletteer_c() ：调用调色板paletteer，这里面有很多的调色板可以选用，拿grDevices来说，可以选用topo.colors()、rainbow()、heat.colors()、terrain.colors()、cm.colors()；这里给自己挖了坑，能不能用ggsci来配色，目前没解决，等我解决了会来更正的。</li>
+<li>theme_bw() ：调整网络的有无，也没什么好说的。</li>
+<li>scale_size_continuous()  添加图注，并标注大小范围。</li>
+</ul>
+<p>参考链接：<br> 1.绘图 <a class="link"   href="https://links.jianshu.com/go?to=https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg" >https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg<i class="fas fa-external-link-alt"></i></a><br> 2.paletteer documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://www.rdocumentation.org/packages/paletteer/versions/1.4.0" >https://www.rdocumentation.org/packages/paletteer/versions/1.4.0<i class="fas fa-external-link-alt"></i></a><br> 3.grDevices documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html" >https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html<i class="fas fa-external-link-alt"></i></a></p>
+<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo写作教程</title>
+    <url>/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h4 id="categories（分类）"><a href="#categories（分类）" class="headerlink" title="categories（分类）"></a>categories（分类）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">categories: </span><br><span class="line">- [Java, android, glide, 源码] //这个为四级分类</span><br><span class="line">- [Java, spring] //这个为二级分类</span><br></pre></td></tr></table></figure>
+<p>详细展示为（以keep主题为例）<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../images/image-20220512150624872.png"
+                      alt="image-20220512150624872"
+                ></p>
+<h4 id="tags（标签）"><a href="#tags（标签）" class="headerlink" title="tags（标签）"></a>tags（标签）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">tags: [hexo, 教程] //这里添加了两个标签</span><br></pre></td></tr></table></figure>
+
+<h4 id="links（友链）"><a href="#links（友链）" class="headerlink" title="links（友链）"></a>links（友链）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="about（关于）"><a href="#about（关于）" class="headerlink" title="about（关于）"></a>about（关于）</h4><h4 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h4><ul>
+<li><p>添加插件    在博客根目录执行命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改根目录下的<code>_config.yml</code></p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改主题配置文件    我的路径：.&#x2F;themes&#x2F;keep下的<code>_config.yml</code>文件</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>GooglePlay内购测试</title>
@@ -64,62 +179,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo写作教程</title>
-    <url>/2022/05/12/hexo%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h4 id="categories（分类）"><a href="#categories（分类）" class="headerlink" title="categories（分类）"></a>categories（分类）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">categories: </span><br><span class="line">- [Java, android, glide, 源码] //这个为四级分类</span><br><span class="line">- [Java, spring] //这个为二级分类</span><br></pre></td></tr></table></figure>
-<p>详细展示为（以keep主题为例）<img  
+    <title>Hexo配置</title>
+    <url>/2022/05/12/Hexo%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/../images/image-20220512150624872.png"
-                      alt="image-20220512150624872"
-                ></p>
-<h4 id="tags（标签）"><a href="#tags（标签）" class="headerlink" title="tags（标签）"></a>tags（标签）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 在头部添加下面内容</span><br><span class="line">tags: [hexo, 教程] //这里添加了两个标签</span><br></pre></td></tr></table></figure>
-
-<h4 id="links（友链）"><a href="#links（友链）" class="headerlink" title="links（友链）"></a>links（友链）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="about（关于）"><a href="#about（关于）" class="headerlink" title="about（关于）"></a>about（关于）</h4><h4 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h4><ul>
-<li><p>添加插件    在博客根目录执行命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改根目录下的<code>_config.yml</code></p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改主题配置文件    我的路径：.&#x2F;themes&#x2F;keep下的<code>_config.yml</code>文件</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure></li>
-</ul>
+                     data-src="/../images/image-20220513150858190.png"
+                      alt="image-20220513150858190"
+                >   </p>
+<p>jj<br>$$<br>ddd<br>$$</p>
+<blockquote>
+<p>快来</p>
+</blockquote>
 ]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/02/12/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server or hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-        <category>android</category>
-        <category>glide</category>
-        <category>源码</category>
-        <category>spring</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hexo常用命令</title>
@@ -142,61 +214,5 @@
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>hexo史上最全搭建教程</title>
-    <url>/2022/02/14/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
-<p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
-<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
-<p><strong>写在前面</strong><br> ggplot2是一款风靡全球的绘图R包，可惜的是，我对它的理解只能到入门的水平，本着在实战中学习的理念，我就搜索一下往后可能用得到的图，进行揣摩和优化，然后我发现了一个师兄的公众号，遂跟着这个师兄学习R绘图。公众号在文末。</p>
-<h2 id="1-读入数据"><a href="#1-读入数据" class="headerlink" title="1.读入数据"></a>1.读入数据</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">dat&lt;-read.table(<span class="string">&quot;kegg.txt&quot;</span>,</span><br><span class="line">                sep = <span class="string">&quot;\t&quot;</span>,</span><br><span class="line">                header = T)</span><br><span class="line">colnames(dat)</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-过滤数据并用默认参数展示"><a href="#2-过滤数据并用默认参数展示" class="headerlink" title="2.过滤数据并用默认参数展示"></a>2.过滤数据并用默认参数展示</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">library(tidyverse)</span><br><span class="line">dat %&gt;% filter(Corrected.P.Value&lt;0.0001) -&gt; dat01 #这里为了减少计算量，根据P值进行了过滤</span><br><span class="line">dim(dat01)</span><br><span class="line">dim(dat)</span><br><span class="line"></span><br><span class="line">library(ggplot2)</span><br><span class="line">dat01$GeneRatio&lt;-dat01$Input.number/200  #ratio的大小其实反应着出现次数的多少</span><br><span class="line">ggplot(dat01,aes(x=GeneRatio,y=Term))+</span><br><span class="line">  geom_point(aes(size=Input.number,color=Corrected.P.Value))</span><br></pre></td></tr></table></figure>
-
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://upload-images.jianshu.io/upload_images/19527700-df1c0458ff3f06f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp"
-                      alt="img"
-                ></p>
-<p>image.png</p>
-<p>这当然无法达到我们发文章的要求，需要对其进行美化一下。</p>
-<h2 id="3-美化"><a href="#3-美化" class="headerlink" title="3. 美化"></a>3. 美化</h2><p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-
-<p>安装好后，用<code>git --version</code> 来查看一下版本</p>
-<h1 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h1><p>新建完成后，指定文件夹目录下有：</p>
-<ul>
-<li>node_modules: 依赖包</li>
-<li>public：存放生成的页面</li>
-<li>scaffolds：生成文章的一些模板</li>
-<li>source：用来存放你的文章</li>
-<li>themes：主题</li>
-<li>** _config.yml: 博客的配置文件**</li>
-</ul>
-<p>对上述几个参数进行解读：</p>
-<ul>
-<li>reorder: 根据出现的次数(generatio)对不同的通路从大到小进行排序。</li>
-<li>coord_cartesian() ：调整画布大小，没什么好说的。</li>
-<li>scale_color_paletteer_c() ：调用调色板paletteer，这里面有很多的调色板可以选用，拿grDevices来说，可以选用topo.colors()、rainbow()、heat.colors()、terrain.colors()、cm.colors()；这里给自己挖了坑，能不能用ggsci来配色，目前没解决，等我解决了会来更正的。</li>
-<li>theme_bw() ：调整网络的有无，也没什么好说的。</li>
-<li>scale_size_continuous()  添加图注，并标注大小范围。</li>
-</ul>
-<p>参考链接：<br> 1.绘图 <a class="link"   href="https://links.jianshu.com/go?to=https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg" >https://mp.weixin.qq.com/s/n6TZoEADyDFcGzSzoGxlsg<i class="fas fa-external-link-alt"></i></a><br> 2.paletteer documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://www.rdocumentation.org/packages/paletteer/versions/1.4.0" >https://www.rdocumentation.org/packages/paletteer/versions/1.4.0<i class="fas fa-external-link-alt"></i></a><br> 3.grDevices documentation：<a class="link"   href="https://links.jianshu.com/go?to=https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html" >https://astrostatistics.psu.edu/su07/R/html/grDevices/html/palettes.html<i class="fas fa-external-link-alt"></i></a></p>
-<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<p>作者：巩翔宇Ibrahimovic<br>链接：<a class="link"   href="https://www.jianshu.com/p/23c02681f7c2" >https://www.jianshu.com/p/23c02681f7c2<i class="fas fa-external-link-alt"></i></a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Android相关</title>
-    <url>/2022/05/12/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/Android%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<p>对对对<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/../images/image-20220512184709270.png"
-                      alt="image-20220512184709270"
-                ></p>
-]]></content>
   </entry>
 </search>
